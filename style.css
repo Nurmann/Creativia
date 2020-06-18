@@ -10,10 +10,86 @@
 
 .header
 {
-	color:red;
 	width:100%;
-	height:100px;
-	background-color:red;	
+	height:70px;
+	background-color:#07070b;	
 	display:grid;
 	grid-template-columns: 1fr repeat(11, 0.7fr 0.3fr)0.7fr 1fr;
+}
+
+.logo
+{
+	grid-column:3/6;
+	background-color:red;
+	height:100%;
+}
+
+.menu {
+  margin: 0;
+  grid-column:8/25;
+}
+
+.menu_horizon li
+{
+	  display:inline;
+	  list-style: none; 
+	  margin-right:5%;
+	  margin-left:0;
+}
+.block
+{
+	max-width:1400px;
+	min-height:400px;
+	max-height:800px;
+	grid-template-columns: 1fr repeat(11, 0.7fr 0.3fr)0.7fr 1fr;
+}
+
+.slideshow
+{
+	background-color:green;		
+	background-image: url(img/lady_home.jpg);
+	background-size: 100%;
+}
+.red_text
+{
+	color:red;
+}
+.title
+{
+	width:100%;
+	text-align:center;
+}
+.about
+{
+background-color:white;		
+}
+
+.portfolio
+{
+background-color:black;		
+}
+
+.clients
+{
+background-color:green;		
+}
+
+.team
+{
+	background-color:yellow;	
+}
+
+.service
+{
+background-color:green;		
+}
+
+.blog
+{
+background-color:orange;		
+}
+
+.contact
+{
+background-color:green;		
 }
