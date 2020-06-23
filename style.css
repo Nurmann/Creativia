@@ -40,15 +40,36 @@
 {
 	max-width:1400px;
 	min-height:400px;
-	max-height:800px;
+	height:700px;
 	grid-template-columns: 1fr repeat(11, 0.7fr 0.3fr)0.7fr 1fr;
 }
 
 .slideshow
 {
-	background-color:green;		
-	background-image: url(img/lady_home.jpg);
-	background-size: 100%;
+	position:relative;
+	background:black;		
+	background-size: contain;
+}
+.slider
+{
+	/*position:absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index=2;*/
+	background-image:url(img/lady_home.png);
+}
+
+.home_text
+{
+	grid-column:3/24;
+	
+}
+
+.slider:hover
+{
+	opacity:0.5;
 }
 .red_text
 {
