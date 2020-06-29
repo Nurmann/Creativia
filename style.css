@@ -38,6 +38,7 @@
 }
 .block
 {
+	
 	max-width:1400px;
 	min-height:400px;
 	height:700px;
@@ -52,24 +53,40 @@
 }
 .slider
 {
-	/*position:absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index=2;*/
+	display: grid;
 	background-image:url(img/lady_home.png);
+	background-size:cover;
 }
+
 
 .home_text
 {
+	padding-top:20%;
 	grid-column:3/24;
-	
 }
 
 .slider:hover
 {
 	opacity:0.5;
+}
+
+.home_buttons{
+	display: grid;
+	grid-column:9/16;
+	height:50px;
+}
+.home_buttons__one{
+	border: 0;
+	background:red;
+	color: white;
+	grid-column:9/12;
+}
+
+.home_buttons__two{
+	border: 0;
+	background:black;
+	color: white;
+	grid-column:13/16;
 }
 .red_text
 {
