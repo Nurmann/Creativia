@@ -80,15 +80,31 @@
 			</article>
 			<div class="photo_us">
 			
-				<img src="img/1.png" class="photo_us_slider left">
-				<img src="img/1.png" class="photo_us_slider center">
-				<img src="img/1.png" class="photo_us_slider right">
+				<img src="img/Layer_8.png" class="photo_us_slider left" onclick="imgSlider('1')">
+				<img src="img/1.png" class="photo_us_slider center" onclick="imgSlider('2')">
+				<img src="img/Layer_9.png" class="photo_us_slider right" onclick="imgSlider('3')">
 			
 			</div>
 			<div class="slidecontainer">
-				<input type="range" min="1" max="3" value="2" class="about_slider">
+				<input type="range" min="1" max="3" value="2" class="about_slider" id="slider_1" onchange="imgSlider(this.value)">
 			</div>
 			<div class="about_design">
+				<div class="about_design__unit">
+					<div class="hexagon_wrapper">
+						<div class="hexagon">
+						</div>
+					</div>
+					<p class="subtitle">
+					</p>
+					<p class="unit_skills">
+					</p>
+				</div>
+				<div class="about_design__unit">
+				</div>
+				<div class="about_design__unit">
+				</div>
+				<div class="about_design__unit">
+				</div>				
 			</div>
 		</div>	
 		<div class= "portfolio block" >
@@ -111,6 +127,7 @@
 		</div>
 		
 	</div>
+	<script src="./script.js"></script>
 	<footer class="footer">
 
 	</footer>
