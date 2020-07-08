@@ -80,6 +80,7 @@
 	background:red;
 	color: white;
 	grid-column:9/12;
+	z-index:2;
 }
 
 .home_buttons__two{
@@ -87,6 +88,7 @@
 	background:black;
 	color: white;
 	grid-column:13/16;
+	z-index:2;
 }
 .red_text
 {
@@ -176,6 +178,7 @@ line-height:25px;
 
 .about_slider
 {
+	
 	-webkit-appearance: none;
 	appearance: none;
 	position:absolute;
@@ -186,65 +189,130 @@ line-height:25px;
 	outline : none;
 }
 
-.about_slider::-webkit-slider-thumb
+.about_slider::-webkit-slider-thumb, .about_slider::-moz-range-thumb
 {
-  appearance: none;
 	-webkit-appearance: none;
     background-image:url(img/shape_3.png);
 	cursor:pointer;
 	height:19px;
 	width:21px;
-
+	border:none;
 }
 .about_design
 {
-	grid-column:2/24;
+	display: flex; 
+	grid-column:2/25;
 	height:200px;
 }
+
 
 .about_design__unit
 {
 
-	width:25%;
+	width:20%;
 	height:100%;
+	margin-right:10%;
+}
+.about_design__unit:last-of-type
+{
+	margin-right:1%;
 }
 .hexagon_wrapper
 {
-	height:75px;
+	position:relative;
+	height:40px;
+	width:70px;
+	margin:0 auto;
 }
+/*посмотреть другие способы верстки шестиугольников сменить размер*/
 .hexagon {
-	width: 45px;
-	height: 25px;
+	position:absolute;
+	left:30%;
+	width: 35px;
+	height: 35px;
+	background: white;
+	z-index:2;
+	border: 2px solid black;
+	border-right:none;
+	border-left:none;
+}
+
+.hexagon_wrapper:hover .hexagon
+{
 	background: red;
-	position: relative;
 }
-.hexagon:before {
-	content: "";
-	position: absolute;
-	top: -11px; 
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 22.5px solid transparent;
-	border-right: 22.5px solid transparent;
-	border-bottom: 11px solid red;
+
+.subtitle
+{
+	text-align:center;
 }
-.hexagon:after {
-	content: "";
-	position: absolute;
-	bottom: -11px; 
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 22.5px solid transparent;
-	border-right: 22.5px solid transparent;
-	border-top: 11px solid red;
+
+.unit_skills
+{
+text-align:center;
+overflow:hidden;	
+}
+.hexagon_left {
+	top:6px;
+	z-index:1;
+	width: 26px;
+	height: 26px;
+	left:10%;
+	border: 2px solid black;
+	border-right:none;
+	border-bottom:none;
+	transform:rotate(-45deg);
+}
+.hexagon_right {
+	top:6px;
+	z-index:1;
+	left:60%;
+	width: 25.5px;
+	height: 25.5px;
+	border: 2px solid black;
+	border-top:none;
+	border-left:none;
+	transform:rotate(-45deg);
+}
+
+.about_us__img
+{
+	position:absolute;
+	top:2px;
+	left:5px;
+	width:25px;
+	height:30px;
 }
 .portfolio
 {
-background-color:black;		
+background-color:#262626;		
 }
 
+.subtitle_portfolio
+{
+	padding-top:3%;
+	font: bold 30px "Lato",sans-serif;
+	color:white;
+	text-align:center;
+}
+.portfolio_menu
+{
+	grid-columns:9/18;
+	padding-bottom:5%;
+}
+.portfolio_menu_slider li
+{
+	  display:inline;
+	  list-style: none; 
+	  margin-right:5%;
+	  margin-left:0;
+}
+.portfolio_menu_slider
+{
+	text-align:center;
+	font: 15px "Lato",sans-serif;
+	color:#a4a4a4;	
+}
 .clients
 {
 background-color:green;		
